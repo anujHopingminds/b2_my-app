@@ -3,14 +3,17 @@ body{
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
   letter-spacing: 5px;
+  margin-top: 50px;
 }
-
+/*  */
 .header{
   display: flex;
+  top: 0;
   justify-content: space-between;
   position: fixed;
   background-color: #fff;
   width: 100%;
+  z-index: 1;
 }
 .header ul{
   list-style: none;
@@ -23,7 +26,44 @@ body{
   cursor: pointer;
   background-color: #ccc;
 }
-
-.poster img{
+.poster {
+  position: relative;
+}
+.poster img {
   width: 100%;
+}
+.poster h1 {
+  position: absolute;
+  bottom: 10px; 
+  left: 3.5rem;
+}
+
+/* about css */
+
+.about {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 4rem;
+  gap: 3rem;
+  padding: 4rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.about img{
+  width: 100%;
+}
+
+.about-des h1 {
+  text-align: center;
+}
+
+.about-des h5 {
+  text-align: center;
+  font-size: 18px;
+}
+
+.about-des p{
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0px;
 }
