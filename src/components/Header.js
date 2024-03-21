@@ -1,19 +1,21 @@
+// Header.js
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Header(){
-    return(
+function Header() {
+    return (
         <div className="header">
             {/* 1st box */}
             <ul>
                 <li>
-                    <a>Gourmet au Catering</a>
+                    <Link to='/'>Gourmet au Catering</Link>
                 </li>
             </ul>
             {/* 2nd box */}
             <ul>
-                <li><a>About</a></li>
-                <li><a>Menu</a></li>
-                <li><a>Contact</a></li>
+                <li><Link to='/about'>About</Link></li>
+                <li><Link to='/menu'>Menu</Link></li>
+                <li><Link to='/contact'>Contact</Link></li>
             </ul>
         </div>
     )
